@@ -1,10 +1,13 @@
 body {
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
     margin: 0;
     padding: 0;
     line-height: 1;
+    width: auto;
 }
 ol, ul,li {
     list-style: none;
@@ -14,65 +17,58 @@ a{
     color: var(--cor-de-link);
 }
 
-/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+/*Header*/
 
-Lo que es el BEM?
-
-BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
-desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
-independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
-con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
-
-Enlace de la documentación oficial!
-https://en.bem.info/methodology/quick-start/*/
-
-/*Sección Menu*/
-
-section.menu{
-
+.menu{
+    display: flex;
+    position: absolute;
+    width: 1136px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    z-index: 9999;   
 }
 
-/*Sección Title*/
-
-section.title{
-
+.menu__header{
+    display: flex;
+    align-items: center;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
-/*Sección About*/
-
-section.about{
-
+.menu__title{
+    width: auto 102px;
+    height: auto 19px;
 }
 
-/*Sección Hobbies*/
-
-section.hobbies{
-    
+.menu__list{
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
-/* Experiencia Académica*/
+/*Hero*/
 
-section.academic{
-
+.title__div{
+    display: flex;
+    width: 1136px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* experiencia*/
 
-section.experience{
 
+.title__profile{
+    width: 368px;
+    height: 368px;
+    padding: 100px;
+    flex-shrink: 0;
 }
 
-/*Contacto*/
-
-section.formcontato{
-
-}
-
-/*footeer*/
-
-section.footer{
-   
-}
 
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
