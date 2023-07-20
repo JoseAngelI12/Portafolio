@@ -85,33 +85,20 @@ a{
 
 /*Hero*/
 
-.title{
-    box-sizing: border-box;
-    display: flex;
-    top: 32px;
-    bottom: 32px;
-    border: 0;
-    padding: 0;
-    width: 1136px;
-    justify-content: space-between;
-    align-items: center;
-}
 .title__div{
     box-sizing: border-box;
     display: flex;
+    flex-direction: row-reverse;
     top: 32px;
     bottom: 32px;
-    border: 0;
-    padding: 0;
     width: 1136px;
     justify-content: space-between;
     align-items: center;
 }
 .title__profile{
-    display: block;
+    display: flex;
     box-sizing: border-box;
     position: relative;
-    left: 208px;
     width: 368px;
     height: 368px;
     flex-shrink: 0;
@@ -158,4 +145,50 @@ a{
     align-items: center;
     gap: 4px;
 }
+
+/*Sobre mi*/
+
+.about{
+    box-sizing: border-box;
+    display: flex;
+    padding: 64px;
+    width: 1312px;
+    height: 255px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+.about__container{
+    box-sizing: border-box;
+    margin: 64px;
+    display: flex;
+    width: 1136px;
+    height: 255px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+.about__title{
+    align-self: stretch;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.about__paragraph{
+    width: 751px;
+    color: var(--preto-100, #464646);
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*Skills*/
+
+.
 
